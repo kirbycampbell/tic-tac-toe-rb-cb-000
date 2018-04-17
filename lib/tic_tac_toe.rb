@@ -30,7 +30,6 @@ def turn_count (board)
     if token == "X" || token == "O"
       counter += 1
     end
-   end
   counter
 end
 
@@ -75,13 +74,7 @@ def play(board)
 end
 
 def valid_move?(board, index)
-  if index.between?(0, 8) && !position_taken?(board, index)
-     true
-  if board[index].between?(0,9)
-    position_taken?
-  else
-     false
-  end
+  index.between?(0,8) && !position_taken?(board, index)
 end
 
 def position_taken?(board, index)
