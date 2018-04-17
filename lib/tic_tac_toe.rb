@@ -108,3 +108,4 @@ def winner(board)
     winner = board[won?(board)[0]]
   end
 end
+end
